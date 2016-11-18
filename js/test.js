@@ -1,4 +1,4 @@
-// jsx中嵌入js对象 
+// jsx中嵌入js对象
 function formatName(user) {
   return user.firstName + 　' ' + user.lastName;
 }
@@ -38,7 +38,7 @@ function tick() {
 }
 // setInterval(tick, 1000);
 
-// components and props  components like js function mostly 
+// components and props  components like js function mostly
 
 // define component two same way
 
@@ -69,7 +69,7 @@ function App() {
       <Welcome name="selvin"/>
     </div>
   )
-}
+} 
 
 const element3 = <Welcome name="selvin"/>;
 
@@ -78,7 +78,7 @@ ReactDOM.render(
   document.getElementById("example")
 );
 
-// 通过ReactDOM.render()渲染虚拟DOM   
+// 通过ReactDOM.render()渲染虚拟DOM
 
 /**
  * element1  getGreeting()  virtual DOM 可以是声明的jsx对象，也可以是js声明的组件
