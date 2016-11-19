@@ -59,7 +59,7 @@ function Welcome(props) {
 //   }
 // }
 
-// component 复用 components only one root element , so add div
+// -  component 复用 components only one root element , so add div 
 function App() {
   return (
     <div>
@@ -71,6 +71,74 @@ function App() {
   )
 } 
 
+// - 提取组件
+// example:
+/*
+function Comment(props) {
+  return (
+    <div className="Comment">
+      <div className="UserInfo">
+        <img className="Avatar"
+          src={props.author.avatarUrl}
+          alt={props.author.name}
+        />
+        <div className="UserInfo-name">
+          {props.author.name}
+        </div>
+      </div>
+      <div className="Comment-text">
+        {props.text}
+      </div>
+      <div className="Comment-date">
+        {formatDate(props.date)}
+      </div>
+    </div>
+  );
+}
+ */
+ // this component accepts three object . author / text / date
+ // first extract author
+ /*
+ function Avatar(props) {
+  return (
+    <img className="Avatar"
+      src={props.user.avatarUrl}
+      alt={props.user.name}
+    />
+  );
+}
+  */
+  // second extract user
+ /*
+ function UserInfo(props) {
+  return (
+    <div className="UserInfo">
+      <Avatar user={props.user} />
+      <div className="UserInfo-name">
+        {props.user.name}
+      </div>
+    </div>
+  );
+}
+  */
+ // finally
+ /*
+ function Comment(props) {
+  return (
+    <div className="Comment">
+      <UserInfo user={props.author} />
+      <div className="Comment-text">
+        {props.text}
+      </div>
+      <div className="Comment-date">
+        {formatDate(props.date)}
+      </div>
+    </div>
+  );
+}
+  */
+
+// - this is a object , we call this object "props" in react .
 const element3 = <Welcome name="selvin"/>;
 
 ReactDOM.render(
