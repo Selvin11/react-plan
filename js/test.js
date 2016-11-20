@@ -36,7 +36,7 @@ function tick() {
     document.getElementById('example')
   );
 }
-// setInterval(tick, 1000);
+setInterval(tick, 1000);
 
 // components and props  components like js function mostly
 
@@ -139,12 +139,12 @@ function Comment(props) {
   */
 
 // - this is a object , we call this object "props" in react .
-const element3 = <Welcome name="selvin"/>;
+// const element3 = <Welcome name="selvin"/>;
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById("example")
-);
+// ReactDOM.render(
+//   <App/>,
+//   document.getElementById("example")
+// );
 
 // 通过ReactDOM.render()渲染虚拟DOM
 
