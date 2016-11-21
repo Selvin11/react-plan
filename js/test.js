@@ -14,7 +14,7 @@ const element1 = (
   </h1>
 );
 
-// jsx本身充当对象
+// jsx本身充当对象 
 function getGreeting(user) {
   if (user) {
     return <h1>Hello , {formatName(user)}</h1>
@@ -69,7 +69,7 @@ function App() {
       <Welcome name="selvin"/>
     </div>
   )
-} 
+}
 
 // - 提取组件
 // example:
@@ -96,9 +96,9 @@ function Comment(props) {
   );
 }
  */
- // this component accepts three object . author / text / date
- // first extract author
- /*
+// this component accepts three object . author / text / date
+// first extract author
+/*
  function Avatar(props) {
   return (
     <img className="Avatar"
@@ -108,8 +108,8 @@ function Comment(props) {
   );
 }
   */
-  // second extract user
- /*
+// second extract user
+/*
  function UserInfo(props) {
   return (
     <div className="UserInfo">
@@ -121,8 +121,8 @@ function Comment(props) {
   );
 }
   */
- // finally
- /*
+// finally
+/*
  function Comment(props) {
   return (
     <div className="Comment">
