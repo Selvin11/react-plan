@@ -39,24 +39,25 @@
 
     ```javascript
         class Test extends React.Component{
-               constructor(props){
-                   super(props);
-                   this.state = {value:"test"};
-                   //将this的指向固定在React对象中
-                   this.handleClick = this.handleClick.bind(this);
-               }
-               handleClick(){
-                   this.setState({
-                       value: document.getElementById("postValue").value
-                   })
-               }
-               render(){
-                   return (
-                       <div>
-                           <input type="text" id="postValue" />
-                           <input type="button" value={this.state.value} onClick={this.handleClick}/>
-                       </div>
-                   );
-               }
-           }
+            constructor(props){
+                super(props);
+                this.state = {value:"test"};
+                //将this的指向固定在React对象中
+                this.handleClick = this.handleClick.bind(this);
+            }
+            handleClick(){
+                let value = document.getElementById("postValue").value;
+                this.setState({
+                    value:  value ? value : "test"
+                })
+            }
+            render(){
+                return (
+                    <div>
+                        <input type="text" id="postValue" />
+                        <input type="button" value={this.state.value} onClick={this.handleClick}/>
+                    </div>
+                );
+            }
+        }
     ```
