@@ -33,28 +33,30 @@
         });
     }
     ```
-> React 实例 点击获取`input`输入值
+    
+    
+* React 点击获取`input`输入值
 
-```javascript
-    class Test extends React.Component{
-        constructor(props){
-            super(props);
-            this.state = {value:"test"};
-            //将this的指向固定在React对象中
-            this.handleClick = this.handleClick.bind(this);
-        }
-        handleClick(){
-            this.setState({
-                value: document.getElementById("postValue").value
-            })
-        }
-        render(){
-            return (
-                <div>
-                    <input type="text" id="postValue" />
-                    <input type="button" value={this.state.value} onClick={this.handleClick}/>
-                </div>
-            );
-        }
-    }
-```
+    ```javascript
+        class Test extends React.Component{
+               constructor(props){
+                   super(props);
+                   this.state = {value:"test"};
+                   //将this的指向固定在React对象中
+                   this.handleClick = this.handleClick.bind(this);
+               }
+               handleClick(){
+                   this.setState({
+                       value: document.getElementById("postValue").value
+                   })
+               }
+               render(){
+                   return (
+                       <div>
+                           <input type="text" id="postValue" />
+                           <input type="button" value={this.state.value} onClick={this.handleClick}/>
+                       </div>
+                   );
+               }
+           }
+    ```
