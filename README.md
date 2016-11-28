@@ -37,7 +37,7 @@
     
 * React 点击获取`input`输入值
 
-    ```javascript
+    ```typescript jsx
         class Test extends React.Component{
             constructor(props){
                 super(props);
@@ -61,3 +61,45 @@
             }
         }
     ```
+    
+* React state初始设置
+    
+    ```typescript jsx
+    // jsx
+      class Test extends React.Component{
+          constructor(props){
+              super(props);
+              this.state = {
+                  liked:false
+              };
+              this.handleClick = this.handleClick.bind(this);
+          }
+          handleClick(){
+              this.setState({
+                  liked: !this.state.liked
+              });
+          }
+          render(){
+              let text = this.state.liked ? 'like' : 'don\'t like';
+              return(
+                  <p onClick={this.handleClick}>
+                      I {text} you.
+                  </p>
+              );
+          }
+      }
+    // js原生
+      const Test = React.createClass({
+          getInitialState: function(){
+              return {liked:false};
+          },
+          handleClick: function () {
+              this.setState({liked:!this.state.liked});
+          },
+          render:function () {
+              let text = this.state.liked ? 'like' : 'don\'t like';
+              return <p onClick={this.handleClick}>I {text} you</p>
+          }
+      });
+       
+```
