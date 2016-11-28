@@ -28,7 +28,7 @@
               name: "ss", 
               style: { 
                 width: obj.width, 
-              height: obj.height
+                height: obj.height
             } 
         });
     }
