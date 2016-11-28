@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29ee8108-f55d-45ae-bcfd-56bd1676a102" name="Default" comment="delete idea">
+    <list default="true" id="29ee8108-f55d-45ae-bcfd-56bd1676a102" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
@@ -53,8 +53,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            <state relative-caret-position="365">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,8 +112,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="597" />
-    <option name="y" value="59" />
+    <option name="x" value="538" />
+    <option name="y" value="7" />
     <option name="width" value="1378" />
     <option name="height" value="1021" />
   </component>
@@ -261,7 +261,7 @@
       <workItem from="1480302265470" duration="435000" />
       <workItem from="1480302787504" duration="347000" />
       <workItem from="1480303849153" duration="20000" />
-      <workItem from="1480321685770" duration="1537000" />
+      <workItem from="1480321685770" duration="2079000" />
     </task>
     <task id="LOCAL-00001" summary="add  handle events in react">
       <created>1479718479781</created>
@@ -326,11 +326,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480323020378</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="delete idea">
+      <created>1480323233906</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1480323233906</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16099000" />
+    <option name="totallyTimeSpent" value="16641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,7 +349,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="597" y="59" width="1378" height="1021" extended-state="0" />
+    <frame x="538" y="7" width="1378" height="1021" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19328359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -393,12 +400,12 @@
     <MESSAGE value="explain prevState" />
     <MESSAGE value="delete .idea" />
     <MESSAGE value="jsx syntax" />
-    <MESSAGE value="delete idea" />
     <MESSAGE value="react handleClick get value" />
     <MESSAGE value="react Click get value" />
     <MESSAGE value="idea problem" />
     <MESSAGE value="idea delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea delete" />
+    <MESSAGE value="delete idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete idea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -774,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="365">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
