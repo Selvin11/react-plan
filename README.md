@@ -65,7 +65,7 @@
 
 * React state初始设置
     
-    ```javascript
+    ```javascript 
     // jsx
       class Test extends React.Component{
           constructor(props){
