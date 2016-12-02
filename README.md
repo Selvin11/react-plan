@@ -37,7 +37,7 @@
     
 * React 点击获取`input`输入值
 
-    ```typescript jsx
+    ```javascript
         class Test extends React.Component{
             constructor(props){
                 super(props);
@@ -62,9 +62,10 @@
         }
     ```
     
+
 * React state初始设置
     
-    ```typescript jsx
+    ```javascript
     // jsx
       class Test extends React.Component{
           constructor(props){
