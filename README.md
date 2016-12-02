@@ -101,5 +101,4 @@
               return <p onClick={this.handleClick}>I {text} you</p>
           }
       });
-       
-```
+    ```
