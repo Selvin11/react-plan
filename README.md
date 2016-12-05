@@ -103,3 +103,57 @@
           }
       });
     ```
+    
+* React fetch 抓取数据
+    ```javascript
+        class Test extends React.Component{
+            constructor(props){
+                super(props);
+                this.state = {
+                    loading: true,
+                    error: null,
+                    data: null
+                }
+            }
+        
+            componentDidMount() {
+                let arr = [];
+                fetch('http://facebook.github.io/react-native/movies.json')
+                    .then((response) => response.json())
+                    .then((responseJson) => {
+                        responseJson.movies.forEach((elem) => arr.push(elem.title));
+                    })
+                    .then(() => this.setState({
+                        loading:false,
+                        data: arr
+                    }))
+                    .catch((error) => this.setState({
+                        loading:false,
+                        error:error
+                    }));
+            }
+        
+            render(){
+                if (this.state.loading) {
+                    return <span>Loading...</span>;
+                } else if (this.state.error !== null) {
+                    return <span>Error: {this.state.error}</span>;
+                } else {
+                    /* 你的代码填入这里 */
+                    console.log(this.state.data)
+                    let data = this.state.data;
+                    return (
+                        <ul>
+                            {data.map((item) => <li> {item}</li>)}
+                        </ul>
+                    );
+                }
+            }
+        
+        }
+        
+        ReactDOM.render(
+            <Test />,
+            document.getElementById("root")
+        )
+    ```
