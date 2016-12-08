@@ -141,10 +141,10 @@
                 } else {
                     /* 你的代码填入这里 */
                     console.log(this.state.data)
-                    let data = this.state.data;
+                    // let data = this.state.data;
                     return (
                         <ul>
-                            {data.map((item) => <li> {item}</li>)}
+                            {this.state.data.map((item,index) => <li key={index}> {item}</li>)}
                         </ul>
                     );
                 }
